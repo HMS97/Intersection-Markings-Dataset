@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intersection Markings Dataset</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: url('dataset_demo.png') no-repeat center center/cover;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 170px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header ul li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        .content {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+        }
+        .content h1, .content h2, .content p {
+            margin-bottom: 20px;
+        }
+        .visualization {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .visualization img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .visualization-row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .visualization-row .visualization {
+            flex: 1;
+            margin: 5px; /* Reduced margin */
+            max-width: 45%; /* Ensure images do not get too big */
+            box-sizing: border-box;
+        }
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Intersection Markings Dataset</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Dataset</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container content">
+        <h1>Welcome to Our Intersection Markings Dataset</h1>
+        <p>Our comprehensive dataset is an invaluable resource for urban planners, transportation agencies, researchers, and anyone interested in the maintenance and management of road infrastructure. Utilizing advanced artificial intelligence techniques, our dataset provides detailed annotations and conditions of various intersection markings, including lane-use arrows and crosswalks.</p>
+
+        <div class="visualization" style="width: 500px; height: 400px; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
+            <img src="dataset_demo.png" style="max-width: 100%; max-height: 100%; display: block;">
+        </div>
+
+
+        <h2>Data Features</h2>
+        <p>The dataset contains the following key features for each annotated marking:</p>
+        <ul>
+            <li><strong>Intersection ID:</strong> A unique identifier for each intersection.</li>
+            <li><strong>Marking Type:</strong> Specifies whether the marking is a lane-use arrow or a crosswalk.</li>
+            <li><strong>Marking Subtype:</strong> Detailed categorization within each type (e.g., Left, Right, Zebra, Ladder).</li>
+            <li><strong>Condition Assessment:</strong> Quality condition from 0 (lowest) to 1 (highest), indicating the degradation level of the markings.</li>
+            <li><strong>Bounding Box Coordinates:</strong> The coordinates defining the position and size of the marking in the image.</li>
+        </ul>
+
+        <h2>Annotation Statistics</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Label</th>
+            <th>Rectangle</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>left</td>
+            <td>4620</td>
+            <td>4621</td>
+        </tr>
+        <tr>
+            <td>straight</td>
+            <td>1058</td>
+            <td>1058</td>
+        </tr>
+        <tr>
+            <td>right</td>
+            <td>2620</td>
+            <td>2621</td>
+        </tr>
+        <tr>
+            <td>leftstraight</td>
+            <td>658</td>
+            <td>658</td>
+        </tr>
+        <tr>
+            <td>rightstraight</td>
+            <td>704</td>
+            <td>704</td>
+        </tr>
+        <tr>
+            <td>CS_1</td>
+            <td>4782</td>
+            <td>4782</td>
+        </tr>
+        <tr>
+            <td>CS_2</td>
+            <td>2117</td>
+            <td>2118</td>
+        </tr>
+        <tr>
+            <td>CS_3</td>
+            <td>764</td>
+            <td>764</td>
+        </tr>
+        <tr>
+            <td><strong>Total</strong></td>
+            <td><strong>9661</strong></td>
+            <td><strong>17326</strong></td>
+        </tr>
+    </tbody>
+</table>
+
+        <h2>Visualizations</h2>
+        <div class="visualization-row">
+            <div class="visualization">
+                <h3>Crosswalk Distribution</h3>
+                <img src="crosswalks_pie_chart.png" alt="Crosswalk Distribution">
+            </div>
+            <div class="visualization">
+                <h3>Traffic Marker Distribution</h3>
+                <img src="traffic_markers_pie_chart.png" alt="Traffic Marker Distribution">
+            </div>
+
+        </div>
+
+        <div class="visualization-row">
+
+        <div class="visualization">
+            <h3>Condition Distribution</h3>
+            <img src="Condition_Distribution_condition.png" alt="Condition Distribution">
+        </div>
+        <div class="visualization">
+            <h3>Arrow Condition and Crosswalk Condition</h3>
+            <img src="condition.png" alt="Arrow Condition and Crosswalk Condition">
+        </div>
+
+    </div>
+
+        <h2>Applications</h2>
+        <p>This dataset is essential for various applications, including but not limited to:</p>
+        <ul>
+            <li><strong>Safety Management:</strong> Providing critical data for hotspot identification and before-after safety evaluation.</li>
+            <li><strong>Infrastructure Maintenance:</strong> Assisting in the prioritization of maintenance tasks based on the degradation conditions of the markings.</li>
+            <li><strong>Urban Planning:</strong> Supporting the development of detailed urban infrastructure models for intelligent transportation systems (ITS) and other planning purposes.</li>
+        </ul>
+
+        <h2>Accessibility</h2>
+
+        <p>We believe this dataset will significantly contribute to advancements in urban science, infrastructure management, and safety enhancement. Thank you for your interest and we look forward to your feedback and collaboration. If you have any questions, please contact us at <a href="mailto:sunhuiming55@gmail.com">sunhuiming55@gmail.com</a>.</p>
+        <p>You can download the dataset on <a href="your-google-drive-link-here">Google Drive</a>.</p>
+        
+        <h2>Citation</h2>
+        <p>If you use our dataset in your research or work, please cite the following paper:</p>
+        <p>{Xie, K., Sun, H., Dong, X., Yang, H., & Yu, H. (2023). Automating intersection marking data collection and condition assessment at scale with an artificial intelligence-powered system. Computational Urban Science, 3(1), 24.}</p>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Intersection Markings Dataset. All rights reserved.</p>
+    </footer>
+</body>
+</html>
