@@ -38,9 +38,9 @@ The following table summarizes the annotation statistics:
 | right           | 2620       | 2621   |
 | leftstraight    | 658        | 658    |
 | rightstraight   | 704        | 704    |
-| CS_1            | 4782       | 4782   |
-| CS_2            | 2117       | 2118   |
-| CS_3            | 764        | 764    |
+| transverse            | 4782       | 4782   |
+| zebra            | 2117       | 2118   |
+| ladder            | 764        | 764    |
 | **Total**       | **9661**   | **17326** |
 
 ## Visualizations
@@ -77,8 +77,16 @@ You can download the dataset on [Google Drive](https://drive.google.com/file/d/1
 
 If you use our dataset in your research or work, please cite the following paper:
 
-Xie, K., Sun, H., Dong, X., Yang, H., & Yu, H. (2023). Automating intersection marking data collection and condition assessment at scale with an artificial intelligence-powered system. Computational Urban Science, 3(1), 24.
-
+@article{xie2023automating,
+  title={Automating intersection marking data collection and condition assessment at scale with an artificial intelligence-powered system},
+  author={Xie, Kun and Sun, Huiming and Dong, Xiaomeng and Yang, Hong and Yu, Hongkai},
+  journal={Computational Urban Science},
+  volume={3},
+  number={1},
+  pages={24},
+  year={2023},
+  publisher={Springer}
+}
 ## Contact
 
 If you have any questions, please contact us at [sunhuiming55@gmail.com](mailto:sunhuiming55@gmail.com).
