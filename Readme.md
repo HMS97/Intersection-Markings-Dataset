@@ -38,11 +38,12 @@ The following table summarizes the annotation statistics:
 | right           | 2620       | 2621   |
 | leftstraight    | 658        | 658    |
 | rightstraight   | 704        | 704    |
-| transverse            | 4782       | 4782   |
-| zebra            | 2117       | 2118   |
-| ladder            | 764        | 764    |
+| CS_1            | 4782       | 4782   |
+| CS_2            | 2117       | 2118   |
+| CS_3            | 764        | 764    |
 | **Total**       | **9661**   | **17326** |
 
+* CS_1, CS_2, CS_3 mean the type of crosswalk: transverse, zebra, ladder 
 ## Visualizations
 
 We have included several visualizations to help understand the distribution and condition of the markings:
