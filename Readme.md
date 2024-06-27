@@ -77,7 +77,7 @@ You can download the dataset on [Google Drive](https://drive.google.com/file/d/1
 ## Citation
 
 If you use our dataset in your research or work, please cite the following paper:
-
+```
 @article{xie2023automating,
   title={Automating intersection marking data collection and condition assessment at scale with an artificial intelligence-powered system},
   author={Xie, Kun and Sun, Huiming and Dong, Xiaomeng and Yang, Hong and Yu, Hongkai},
@@ -88,6 +88,7 @@ If you use our dataset in your research or work, please cite the following paper
   year={2023},
   publisher={Springer}
 }
+```
 ## Contact
 
 If you have any questions, please contact us at [sunhuiming55@gmail.com](mailto:sunhuiming55@gmail.com).
